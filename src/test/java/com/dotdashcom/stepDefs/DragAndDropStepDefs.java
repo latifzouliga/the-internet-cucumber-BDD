@@ -14,6 +14,7 @@ public class DragAndDropStepDefs {
 
     @When("user drags box A to box B")
     public void user_drags_box_a_to_box_b() {
+        //TODO: need to figure out a way to make it pass the test
         Actions actions = new Actions(Driver.getDriver());
         actions.clickAndHold(dragAndDrop.boxA).moveToElement(dragAndDrop.boxB).release().perform();
     }
